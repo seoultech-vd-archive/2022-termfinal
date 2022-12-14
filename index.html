@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2022년 서울과기대 시각디자인전공 과제전</title>
+	<meta name="description" content="서울과학기술대학교 2022년 디자인학과 시각디자인전공 과제전">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name=" theme-color" content="#003e7e">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://vd.seoultech.ac.kr">
+	<meta property="og:image" content="thumbnail.jpg">
+	<meta property="og:title" content="2022년 2학기 서울과기대 VD 과제전">
+	<meta property="og:description" content="서울과학기술대학교 2022년 디자인학과 시각디자인전공 과제전">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;
+			box-sizing: border-box;}
+		body,div,p,ul,li,h1,h2{margin:0; padding:0;}
+		body{background: url(back.jpg); background-size: cover;}
+		a{text-decoration: none; color:black; display: block;}
+		section{width:1000px; margin:2em auto 4em; display: flex;}
+		footer{width: 1000px; margin:2em auto 0em; display: flex;}
+		.col{width:33.3%;}
+		h2{font-size: 1.2em;padding:0.2em 0.5em 0.6em;}
+		.class{font-size: 1.2em;padding:0.2em 0.5em 0.6em;
+			cursor: pointer;transition:all 0.5s;}
+		.mgrade{display: none;}
+		
+		@media all
+  		and (max-width: 600px){
+  			section .col{width: 100%; column-count: 2;}
+  			footer .col{width: 100%;}
+  			h2,.class{font-size: 1rem;}
+  			section{width:100%;margin-top: 1em;display: block}
+  			footer{width:100%;margin-top: 1em;column-count: 2; display: block}
+  			.grade{display: none;}
+  			.mgrade{display: block; margin-top: 2rem;}
+  		}	
+  		
+  		@media (hover: hover) {
+  			.class:hover{background: none; color:black; backdrop-filter: brightness(1) blur(3px);}
+  		}
+	</style>
+</head>
+<body>
+	<section id="contents">
+		<h2 class="mgrade">1학년</h2>
+		<div id="firstcon" class="col"></div>
+		<h2 class="mgrade">2학년</h2>
+		<div id="secondcon" class="col"></div>
+		<h2 class="mgrade">3학년</h2>
+		<div id="thirdcon" class="col"></div>
+	</section>
+	<footer>
+		<div class="col">
+		</div>
+		<div class="col">
+			<a href="https://vd.seoultech.ac.kr" target="blank">
+				<h2 class='class'>서울과학기술대학교<br>시각디자인전공<br>2022 과제전</h2>
+			</a>
+		</div>
+		<div class="col">
+			<a href="https://vd.seoultech.ac.kr" target="blank">
+				<h2 class='class'>배경아트(22부덕현)<br>vd.seoultech.ac.kr<br>&copy;2022</h2>
+			</a>
+		</div>
+		
+	</footer>
+<script type="text/javascript">
+let first = [
+	["<div>시각디자인스케치</div><div>안중경(1반)</div>","https://drive.google.com/drive/folders/1ShzBoxPHFFrZLxKYodoctLzOKAVDc7l5?usp=sharing"],
+	["<div>시각디자인스케치</div><div>안중경(2반)</div>","https://drive.google.com/drive/folders/1011fYv0j2NYEUDf_lsuooxaAeCQ4iTcT?usp=sharing"],
+	["<div>디지털이미지디자인</div><div>이병학(1반)</div>","https://youtube.com/playlist?list=PLrVwjXE24T91VZ6wP7waFVeszQ9SG5CbW"],
+	["<div>디지털이미지디자인</div><div>이병학(2반)</div>","https://youtube.com/playlist?list=PLrVwjXE24T90bD5RGXn7Yr2g0zb1JTJfR"],
+	["<div>사진과디자인</div><div>한지연(02)</div>","https://drive.google.com/drive/folders/1YeDRU_jNYnG-WNLG5nsNMmbjGoTlijcu?usp=sharing"]
+];
+//first.sort(function(a, b){return 0.5 - Math.random()});
+
+let second = [
+	["<div>UX디자인</div><div>유은</div>","https://www.behance.net/snad2020uxd"],
+	["<div>디자인과마케팅</div><div>박승배</div>","https://www.youtube.com/playlist?list=PLQxBw5r0KZaMlkcFZxY4FAofYm96wUbph"],
+	["<div>모션그래픽스</div><div>편정민</div>","https://www.youtube.com/playlist?list=PLpMMPQDcqbaEiwVgZkjhuVrj5r26gLpzF"],
+	["<div>모션그래픽스</div><div>송재연</div>","https://www.youtube.com/playlist?list=PLpMMPQDcqbaEiwVgZkjhuVrj5r26gLpzF"]
+];
+//second.sort(function(a, b){return 0.5 - Math.random()});
+
+let third = [
+	["일러스트레이션<br>노준구","https://www.instagram.com/seoultech.illustration/"],
+	["웹인터페이스디자인<br>이병학","http://leebh.net/ex/webinter-2022/"],
+	["광고서비스디자인<br>권교영","https://www.behance.net/collection/199876281/2022-Seoultech-VD-"],
+	["디지털영상표현<br>조혜정(1반)","https://youtu.be/48RLe46pnuU"]
+];
+//third.sort(function(a, b){return 0.5 - Math.random()});
+
+
+let grade1 = document.createElement("h2");
+grade1.className = "grade";
+grade1.innerHTML = "1학년";
+firstcon.appendChild(grade1);
+
+
+for(let i=0; i<first.length; i++){
+	let tt = document.createElement("a");
+	tt.href = first[i][1]; tt.target = "_blank";
+	let t = document.createElement("h2");
+	t.className = "class";
+	t.innerHTML = first[i][0];
+	tt.appendChild(t);
+	firstcon.appendChild(tt);
+}
+
+putEmpty("firstcon");
+
+let grade2 = document.createElement("h2");
+grade2.className = "grade";
+grade2.innerHTML = "2학년";
+secondcon.appendChild(grade2);
+
+for(let i=0; i<second.length; i++){
+	let tt = document.createElement("a");
+	tt.href = second[i][1]; tt.target = "_blank";
+	let t = document.createElement("h2");
+	t.className = "class";
+	t.innerHTML = second[i][0];
+	tt.appendChild(t);
+	secondcon.appendChild(tt);
+}
+
+
+let grade3 = document.createElement("h2");
+grade3.className = "grade";
+grade3.innerHTML = "3학년";
+thirdcon.appendChild(grade3);
+
+for(let i=0; i<third.length; i++){
+	let ss = document.createElement("a");
+	ss.href = third[i][1]; ss.target = "_blank";
+	let s = document.createElement("h2");
+	s.className = "class";
+	s.innerHTML = third[i][0];
+	ss.appendChild(s);
+	thirdcon.appendChild(ss);
+}
+
+
+function removeClass(element, className) { 
+	let check = new RegExp("(\\s|^)" + className + "(\\s|$)"); 
+	element.className = element.className.replace(check, " ").trim(); 
+};
+function putEmpty(ta){
+	let a = document.createElement("h2");
+	a.innerHTML = "&nbsp;<br>&nbsp;";
+	let b = document.getElementById(ta);
+	b.appendChild(a);
+} 
+</script>
+</body>
+</html>
