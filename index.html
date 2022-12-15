@@ -16,7 +16,7 @@
 		*{font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;
 			box-sizing: border-box;}
 		body,div,p,ul,li,h1,h2{margin:0; padding:0;}
-		body{background: url(back.jpg); background-size: cover;}
+		body{background: url(back.jpg); background-size: cover; background-attachment: fixed}
 		a{text-decoration: none; color:black; display: block;}
 		h1{width: 1000px; margin:0em auto 0em; padding:6rem 0.5rem 0.6rem;}
 		section{width:1000px; margin:2em auto 4em; display: flex;}
@@ -27,6 +27,7 @@
 			cursor: pointer;}
 		.mgrade{display: none;}
 		.intext{background: black; color:white;}
+		.mheader{display: none;}
 
 		@media all
   		and (max-width: 600px){
@@ -40,6 +41,8 @@
   			footer{width:100%;margin-top: 1em;column-count: 2; display: block}
   			.grade{display: none;}
   			.mgrade{display: block; margin-top: 1rem;}
+  			.mheader{display: block;}
+  			.dheader{display: none;}
   		}	
   		
   		@media (hover: hover) {
@@ -48,7 +51,8 @@
 	</style>
 </head>
 <body>
-	<h1>2022 시각디자인전공 과제전</h1>
+	<h1 class="dheader">2022 시각디자인전공 과제전</h1>
+	<h1 class="mheader">2022<br>시각디자인전공<br>과제전</h1>
 	<section id="contents">
 
 		<h2 class="mgrade">1학년</h2>
