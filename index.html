@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>2022년 서울과기대 시각디자인전공 과제전</title>
+	<title>2022년 서울과학기술대학교 시각디자인전공 과제전</title>
 	<meta name="description" content="서울과학기술대학교 2022년 디자인학과 시각디자인전공 과제전">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 	<meta name=" theme-color" content="#003e7e">
@@ -13,18 +13,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
 	<style type="text/css">
-		*{font-family: 'Noto Sans KR', sans-serif; word-break: keep-all;
-			box-sizing: border-box;}
+		*{font-family: 'Noto Sans KR', sans-serif; word-break: keep-all; box-sizing: border-box;}
 		body,div,p,ul,li,h1,h2{margin:0; padding:0;}
 		body{background: url(back.jpg); background-size: cover; background-attachment: fixed}
 		a{text-decoration: none; color:black; display: block;}
 		h1{width: 1000px; margin:0em auto 0em; padding:6rem 0.5rem 0.6rem;}
+		h2{font-size: 1.2em;padding:0.2em 0.5em 0.6em;}
 		section{width:1000px; margin:2em auto 4em; display: flex;}
 		footer{width: 1000px; margin:2em auto 0em; display: flex;}
 		.col{width:33.3%;}
-		h2{font-size: 1.2em;padding:0.2em 0.5em 0.6em;}
-		.class{font-size: 1.2em;padding:0.2em 0.5em 2em;
-			cursor: pointer;}
+		.class{font-size: 1.2em;padding:0.2em 0.5em 2em; cursor: pointer;}
 		.mgrade{display: none;}
 		.intext{background: black; color:white;}
 		.mheader{display: none;}
@@ -54,7 +52,6 @@
 	<h1 class="dheader">2022 시각디자인전공 과제전</h1>
 	<h1 class="mheader">2022<br>시각디자인전공<br>과제전</h1>
 	<section id="contents">
-
 		<h2 class="mgrade">1학년</h2>
 		<div id="firstcon" class="col"></div>
 		<h2 class="mgrade">2학년</h2>
@@ -109,7 +106,6 @@ grade1.className = "grade";
 grade1.innerHTML = "1학년";
 firstcon.appendChild(grade1);
 
-
 for(let i=0; i<first.length; i++){
 	let tt = document.createElement("a");
 	tt.href = first[i][1]; tt.target = "_blank";
@@ -137,7 +133,6 @@ for(let i=0; i<second.length; i++){
 	secondcon.appendChild(tt);
 }
 
-
 let grade3 = document.createElement("h2");
 grade3.className = "grade";
 grade3.innerHTML = "3학년";
@@ -153,11 +148,11 @@ for(let i=0; i<third.length; i++){
 	thirdcon.appendChild(ss);
 }
 
-
 function removeClass(element, className) { 
 	let check = new RegExp("(\\s|^)" + className + "(\\s|$)"); 
 	element.className = element.className.replace(check, " ").trim(); 
 };
+	
 function putEmpty(ta){
 	let a = document.createElement("h2");
 	a.innerHTML = "&nbsp;<br>&nbsp;";
